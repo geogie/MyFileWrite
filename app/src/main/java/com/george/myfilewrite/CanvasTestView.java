@@ -15,7 +15,6 @@ import android.view.View;
  */
 public class CanvasTestView extends View {
     private Paint circlePaint = new Paint(Paint.ANTI_ALIAS_FLAG);
-
     private void initCirclePaint() {
         circlePaint.setColor(Color.parseColor("#000000"));
         circlePaint.setStrokeWidth(5);
