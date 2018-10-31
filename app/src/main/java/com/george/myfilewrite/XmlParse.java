@@ -19,6 +19,19 @@ import java.io.FileOutputStream;
 public class XmlParse {
     private static final String TAG = "XmlParse";
 
+    /*
+    xml快速转excel技巧：
+    这种格式生成的xml。使用excel打开后可以快速转为xls格式的Excel文件。
+    <?xml version='1.0' encoding='utf-8' standalone='no' ?>
+<xml>
+	<row tian="book" url="tes1.aac" age=""/>
+	<row tian="book name" url="tes2.aac" age=""/>
+</xml>
+     */
+    /**
+     * 生成xml
+     *
+     */
     public static void writeXml() {
         try {
             File file = new File(Environment.getExternalStorageDirectory().getAbsolutePath() + "/myfile/resultScore.xml");
